@@ -1,0 +1,25 @@
+{
+    "name": "StdApp",
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://github.com/codecov/codecov-php",
+    "description": "project",
+    "keywords": ["code coverage", "codecov", "coverage reports"],
+    "authors": [
+        {
+            "name": "codecov.io",
+            "email": "hello@codecov.io"
+        }
+    ],
+    "require": {
+        "php": ">=5.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-0": { 
+            "Example": "src/"
+        }
+    }
+}
