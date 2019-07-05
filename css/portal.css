@@ -1,0 +1,14 @@
+input{
+    outline: 0;
+}
+
+.bg1{
+    background-color: #61a4ff !important;
+    background-image: url("http://localhost:80/portal/bg.jpg");
+    background-size: cover;
+}
+body{
+    background-color: #61a4ff !important;
+
+    background-size: cover;
+}
