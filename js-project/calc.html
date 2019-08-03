@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"></script>
+</head>
+<body>
+	<div style="background-color: #D9E4F1; width: 53%; position: absolute; left: 320px; top: 115px">
+	<table align="center" border="1" cellpadding="1px" cellspacing="8px" style="border-color: #D9E4F1; text-align: center;">
+		<tr><td colspan="10"><input type="text" name="" id="scrn" style="font-size: 35px; padding: 10px; width: 97.5%; color: #643976"><div id="operand" style="position: absolute; right: 25px; top: 25px; color: red; font-size: 30px; font-weight: bolder;"></div></td></tr>
+		<tr><td colspan="5"><button onclick="">Degrees</button><button onclick="">Radians</button><button onclick="">Grad</button></td><td><button onclick="mc()">MC</button></td><td><button onclick="mr()">MR</button></td><td><button onclick="ms()">MS</button></td><td><button onclick="ms()">MS</button></td><td><button onclick="mr()">MR</button></td></tr>
+
+		<tr><td><button onclick="switcher()" style="color: red; font-size: 15px"><div id="switchKey">ON</div></button></td><td><button onclick="">Inv</button></td><td><button onclick="">In</button></td><td><button onclick="">(</button></td><td><button onclick="">)</button></td><td><button>blnk</button></td><td><button onclick="init()">CE</button></td><td><button onclick="del()">del</button></td><td><button onclick="">+-</button></td><td><button onclick="sqrt()">sqrt</button></td></tr>
+
+		<tr><td><button>Int</button></td><td><button onclick="sinh()">sinh</button></td><td><button onclick="sin()">sin</button></td><td><button onclick="sqr2()">x^2</button></td><td><button onclick="">n!</button></td><td><button onclick="dig(7)">7</button></td><td><button onclick="dig(8)">8</button></td><td><button onclick="dig(9)">9</button></td><td><button onclick="division()" style="font-size: 20px">/</button></td><td><button onclick="percent()">%</button></td></tr>
+
+		<tr><td><button>dms</button></td><td><button onclick="cosh()">cosh</button></td><td><button onclick="cos()">cos</button></td><td><button onclick="">x^y</button></td><td><button onclick="">y sqt x</button></td><td><button onclick="dig(4)">4</button></td><td><button onclick="dig(5)">5</button></td><td><button onclick="dig(6)">6</button></td><td><button onclick="multiply()" style="font-size: 20px">*</button></td><td><button onclick="onedivx()">1/x</button></td></tr>
+
+		<tr><td><button onclick="pie()">pie</button></td><td><button onclick="tanh()">tanh</button></td><td><button onclick="tan()">tan</button></td><td><button onclick="">x^3</button></td><td><button onclick="">3 sqt x</button></td><td><button onclick="dig(1)">1</button></td><td><button onclick="dig(2)">2</button></td><td><button onclick="dig(3)">3</button></td><td><button onclick="minus()" style="font-size: 20px">-</button></td><td rowspan="2"><button onclick="eql()" style="padding: 20px; font-size: 20px">=</button></td></tr>
+
+		<tr><td><button onclick="eular()">E</button></td><td><button onclick="exp()">Exp</button></td><td><button onclick="">Mod</button></td><td><button onclick="">log</button></td><td><button onclick="raiseTox()">10^x</button></td><td colspan="2"><button onclick="dig(0)">0</button></td><td><button onclick="">.</button></td><td><button onclick="plus()" style="font-size: 20px">+</button></td></tr>
+		
+	</table>
+	</div>
+</body>
+</html>

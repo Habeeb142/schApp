@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1">
+	<style type="text/css">
+
+		body
+		{
+			background-image: url(JellyFish.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		
+		}
+		table
+		{
+			align-content: center;
+			border-collapse: collapse;
+			border: solid;
+			border-right: dashed;
+			border-left: dashed;
+			background-color: #BECFD7;
+			
+			border-radius: 50px
+
+			
+		}
+		td, th
+		{
+			padding: 30px;
+			border-right: dashed;
+			border-bottom: dashed;
+			color: #2690C9;
+			font-size: 25px
+		}
+
+		#naira
+		{
+			text-decoration: line-through;
+		}
+
+		div
+		{
+			color: #B76F26
+		}
+		
+	</style>
+	<script>
+		var Quantity1=25;  var Quantity2=20;  var Quantity3=10;  var Quantity4=5; var SubTotal; var Total
+		function calc1()
+		{	
+			var SubTotal = 8000*order1.value;
+			if (Quantity1 >= order1.value) {
+			document.getElementById('demo1').innerHTML=SubTotal 
+		}
+			else {
+				alert("SORRY USER! Your Needed Quantity is beyond the available Quantity");
+				document.getElementById('demo1').innerHTML="Error"
+			}
+
+			if (Quantity1 >= order1.value) 
+			{
+				var Total =  parseFloat(8000*order1.value)+parseFloat(3000*order2.value)+parseFloat(30000*order3.value)+parseFloat(			500*order4.value);
+				document.getElementById('demo5').innerHTML=Total;
+			}
+			else  {
+				document.getElementById('demo5').innerHTML="Error"
+			}
+		}
+
+		function calc2()
+		{
+			var SubTotal = 3000*order2.value;
+			(Quantity2 >= order2.value)?
+			document.getElementById('demo2').innerHTML = SubTotal : alert("SORRY USER! Your Needed Quantity is beyond the available Quantity");
+
+			if(Quantity2 >= order2.value)
+			{
+			var Total =   parseFloat(8000*order1.value)+parseFloat(3000*order2.value)+parseFloat(30000*order3.value)+parseFloat(500*order4.value);
+			document.getElementById('demo5').innerHTML = Total 
+			}
+
+			else  {
+				document.getElementById('demo5').innerHTML="Error"
+			}
+		}	
+
+		function calc3()
+		{	
+			var SubTotal = 30000*order3.value;
+			if(Quantity3 >= order3.value) 
+			{
+			document.getElementById('demo3').innerHTML = SubTotal;
+
+			var Total =  parseFloat(8000*order1.value)+parseFloat(3000*order2.value)+parseFloat(30000*order3.value)+parseFloat(500*order4.value);
+			document.getElementById('demo5').innerHTML = Total 
+			}
+
+			else  { 
+			alert("SORRY USER! Your Needed Quantity is beyond the available Quantity");
+			document.getElementById('demo3').innerHTML = "Error";
+			document.getElementById('demo5').innerHTML="Error"
+		}
+
+			
+		}
+
+		function calc4()
+		{	
+			var SubTotal = 500*order4.value;
+			(Quantity4 >= order4.value)?
+			document.getElementById('demo4').innerHTML = SubTotal : alert("SORRY USER! Your Needed Quantity is beyond the available Quantity")
+
+			var Total =  parseFloat(8000*order1.value)+parseFloat(3000*order2.value)+parseFloat(30000*order3.value)+parseFloat(500*order4.value);
+			document.getElementById('demo5').innerHTML = Total 
+	 	}C
+	</script>
+</head>
+<body>
+	<header>
+	<table align="center">
+		<tr>
+			<th>PRODUCT</th>
+			<th>QUANTITY</th>
+			<th>UNIT COST</th>.
+			<th>ORDER</th>
+			<th><p id="naira">N</p>TOTAL</th>
+		</tr>
+
+		<tr>
+			<td>TV</td>
+			<td>25</td>
+			<td><b id="naira">N</b>8000</td>
+			<td><input type="text" name="order1" id="order1" onkeyup="calc1()"</td>
+			<td><div id="demo1"></div></td>
+		</tr>
+
+		<tr>
+			<td>DVD</td>
+			<td>20</td>
+			<td><b id="naira">N</b>3000</td>
+			<td><input type="text" name="order2" id="order2"  onkeyup="calc2()"></td>
+			<td><div id="demo2"></div></td>
+		</tr>
+
+		<tr>
+			<td>AC</td>
+			<td>10</td>
+			<td><b id="naira">N</b>30,000</td>
+			<td><input type="text" name="order3" id="order3" onkeyup="calc3()"></td>
+			<td><div id="demo3"></div></td>
+		</tr>
+
+		<tr>
+			<td>SOCKET</td>
+			<td>5</td>
+			<td><b id="naira">N</b>500</td>
+			<td><input type="text" name="order4" id="order4" onkeyup="calc4()"></td>
+			<td><div id="demo4"></div></td>
+		</tr>
+
+		<tr>
+			<td colspan="3" align="center"><b id="naira">N</b> TOTAL</td>
+			<td colspan="2"><div id="demo5"></div></td>
+		</tr>
+	</table>
+	</header>
+</body>
+</html>

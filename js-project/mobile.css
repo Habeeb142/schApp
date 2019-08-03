@@ -1,0 +1,158 @@
+button
+	{
+		width: 65px; height: 40px;
+		border:0;
+		font-family: arial;
+		/*//outline: 0;*/
+		border-radius: 5px
+	}
+	button:hover, #call:hover, #abort:hover, #del:hover
+	{
+		width: 65px; height: 40px;
+		border:0;
+		font-family: arial;
+		background-color: green;
+		border-radius: 5px
+
+	}
+
+table
+	{
+		background-color: #788375;
+		margin-top: 0px;
+		margin-right: 250px;
+		
+	}
+#call
+	{
+		background-color: #AFD48B; font-family: arial; font-weight: bold;
+	}
+#abort
+	{
+		background-color: red; font-family: arial; font-weight: bold;
+	}
+#del
+{
+	background-color: #F8E6D1; font-family: arial; font-weight: bold;
+}
+
+#scrn
+	{
+		margin: 0px 0px 12px 6px;
+		padding: 30px 0px 0px 9px;
+		height: 37vh;
+		width: 95%;
+		background-color: white;
+		font-size: 13px;
+		font-weight: bold;
+	    font-family: arial;
+	    color: black;
+	    background-image: url(media/pic.jpg);
+	    background-size: cover;
+	    border-radius: 10px
+	}
+
+#nokia
+	{
+		margin-top: 6px;
+		height: 3vh;
+		width: 100%;
+		background-color: #997E45;
+		font-family: arial;
+		text-align: center;
+
+	}
+	#showdate
+	{
+		font-size: 15px;
+		font-family: arial;
+		color: #F6E4CF;
+		background-color: black;
+		border-radius: 5px;
+		width: 42px;
+		position: absolute;
+		top:68px;
+		right: 29.5%
+	}
+	td
+	{
+		width: 27px; height: 6px
+
+	}
+	#speaker
+	{
+		height: 1vh;
+		width: 35px;
+		background-color: black;
+		text-align: center;
+		margin-left: 85px;
+		border-radius: 9px
+	}
+	#hidescreen
+	{
+		display: none;
+	}
+
+
+fieldset
+{
+	position: absolute;
+	font-family: arial;
+	background-color: #997E45;
+	height: 95%;
+	margin-top: -30px;
+	margin-left: 200px;
+}
+legend
+{
+	background-color: white;
+	padding: 20px;
+	font-weight: bold;
+	font-size: 20px	
+}
+#no,#vouchers
+{
+	height: 4vh;
+	font-weight: bold;
+}
+#buttongenerate
+{
+	width: 85px;
+}
+footer
+{	height: 100vh;
+	position: relative;
+	padding-top:30px;
+	animation-name: footercolor;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+@keyframes footercolor
+	{
+		0%{background-color: #997E45}
+		25%{background-color:black}
+	}
+
+#redId
+{
+	position: relative;
+	left:23%; 
+	font-family: arial;
+	font-weight: bold;
+
+}
+
+
+
+/*
+#todoList:hover
+{
+	width: 100px;
+	height: 90vh;
+	animation-duration: 0s;
+	top: 0px;
+	text-align: center;
+
+}*/
+
+

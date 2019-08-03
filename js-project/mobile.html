@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="mobile.css">
+	<script type="text/javascript" src="bootstrap/dist/js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="mobile.js"></script>
+</head>
+<body onload="generate()">
+	<footer>
+	<fieldset align="center">
+		<legend>RECHARGE CARD VOUCHER</legend><br>
+		<input type="text" id="no" name=""><br><br>
+		<button onclick="voucherGenerator()" id="buttongenerate">Generate</button><br><br>
+		<div id="vouchers"></div>
+	</fieldset>
+
+
+
+	<table border="" align="center" style="border-radius: 10px">
+		<tr>
+			<td height="300px" width="200px" colspan="3" style="background-color: #997E45"><div id="speaker"></div><div id="nokia">NOKIA</div><div id="showdate"></div><div id="scrn"></div></td>
+		</tr>
+		<tr>
+			<td><button onclick="call()" id="call">call</button></td><td><button onclick="del()" id="del">del</button></td><td><button onclick="abort()" id="abort">abort</button></td></td>
+		</tr>
+		<tr><td colspan="3" height="20px"></td></tr>
+		<tr>
+			<td><button onclick="press(1)">1</button></td><td><button onclick="press(2)">2</button></td><td><button onclick="press(3)">3</button></td>
+		</tr>
+		
+		<tr>
+			<td><button onclick="press(4)">4</button></td><td><button onclick="press(5)">5</button></td><td><button onclick="press(6)">6</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="press(7)">7</button></td><td><button onclick="press(8)">8</button></td><td><button onclick="press(9)">9</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="press('*')">*</button></td><td><button onclick="press(0)">0</button></td><td><button onclick="pressHash()">#</button></td>
+		</tr>
+	</table>
+
+	<!-- <div id="redId" style="color: red"></div>	 -->
+	<div id="hidescreen">
+		<input type="text" name="" id="screenhide"><br>
+		<input type="number" name=""  id="screenhide2"><br>
+		<input type="number" name=""  id="valuechecker"></form>
+	</div>
+
+	<br><br>
+</footer>
+</body>
+</html>

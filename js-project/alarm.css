@@ -1,0 +1,177 @@
+body
+{
+    background-color: #E0EBF0;
+    position: relative;
+    padding-top: 10%;
+    animation-name: changecolor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changecolor
+{
+    0%{background-color:  #E0EBF0}
+    25%{background-color: #415171}
+    50%{background-color: #0D0E06}
+}
+
+main
+{
+    background-image: url('media/Lighthouse.jpg');
+    background-size: cover;
+    height: 50vh;
+   border-radius: 100px;
+    transition: transform 0.5s
+}
+/*main:hover
+{
+    background-image: url('Lighthouse.jpg');
+    background-size: cover;
+    height: 50vh;
+    width: 50%;
+    position: relative;
+    left:25%;
+    border-radius: 100px;
+    transform: skew(360deg);
+
+}*/
+@keyframes ball
+{
+    0%{top: 0; left: 0%; background-color: #050903 }
+    25%{top: 0%; left: 93%; background-color: #CADCE9}
+}
+@keyframes ballrole
+{
+    0%{bottom: 0; right: 0%; background-color: #050903 }
+    25%{bottom: 0; right: 93%; background-color: #CADCE9}
+}
+@keyframes balrole
+{
+    0%{top: 0; left: 0%; background-color: #050903 }
+    25%{top:91%; left: 0%; background-color: #CADCE9}
+}
+@keyframes ballrol
+{
+    0%{bottom: 0; right: 0%; background-color: #050903 }
+    25%{bottom: 91%; right: 0%; background-color: #CADCE9}
+}
+#ball1
+{
+    position: absolute;
+    top: 0; left:0;
+    animation-name: ball;
+    animation-duration: 3s;
+    height: 50px; width: 50px;
+    background-color: #050903;
+    border-radius: 100px;
+    animation-iteration-count: infinite;
+}
+#ball2
+{
+    position: absolute;
+    bottom: 0; right:0;
+    animation-name: ballrole;
+    animation-duration: 3s;
+    height: 50px; width: 50px;
+    background-color: #050903;
+    border-radius: 100px;
+    animation-iteration-count: infinite;
+}
+#ball3
+{
+    position: absolute;
+    top: 0; left:0;
+    animation-name: balrole;
+    animation-duration: 3s;
+    height: 50px; width: 50px;
+    background-color: #050903;
+    border-radius: 100px;
+    animation-iteration-count: infinite;
+}
+#ball4
+{
+    position: absolute;
+    bottom: 0; right:0;
+    animation-name: ballrol;
+    animation-duration: 3s;
+    height: 50px; width: 50px;
+    background-color: #050903;
+    border-radius: 100px;
+    animation-iteration-count: infinite;
+}
+
+#DisplayDate
+{
+    font-family: arial-black;
+    font-size: 80px;
+    color: #ff6c00;
+    letter-spacing: 20px
+    
+}
+@media screen and (max-width: 600px) {
+    #DisplayDate {
+        font-size: 40px;
+        letter-spacing: 0px 
+    }
+}
+#dropdown
+{
+    visibility: hidden;
+}
+
+button:hover
+{
+    background-color: rgb(171,63,0);
+    color: #FCC177;
+}
+#hour
+{
+    font-size: 20px;
+    font-family: Arial;
+    padding: 15px;
+   
+    background-color: #131008;
+    color: #FFC387;
+    border-top-left-radius: 19px;border-bottom-left-radius: 19px
+}
+#minute,#second
+{
+    font-size: 20px;
+    font-family: Arial;
+    padding: 15px;
+  
+    background-color: #131008;
+    color: #FFC387;
+    border-top-left-radius: 19px;border-bottom-left-radius: 19px
+}
+#demo1:hover,#demo2:hover
+{
+    display: none;
+}
+#calc
+{
+    visibility: hidden;
+    position: absolute;
+    top:-30%;
+}
+#no
+{
+    font-size: 30px;
+    border-radius: 15px;
+    position:relative;
+    left:40%;
+}
+#demo1
+{
+    font-size: 30px;
+    color: red;
+    position: absolute;
+}
+#demo2
+{
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    left:110%;
+    top: 76%
+}
