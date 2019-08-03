@@ -1,4 +1,4 @@
-var sound = new Audio();
+var sound = new Audio();alert();
 		sound.src = "media/Kalimba.mp3";
 
 
