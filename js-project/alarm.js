@@ -1,5 +1,5 @@
 var sound = new Audio();alert();
-		sound.src = "media/Kalimba.mp3";
+		sound.src = "https://gaana.com/playlist/rosidathokchom-gbabd-audiohindisong";
 
 
 		setInterval(dateshow);
