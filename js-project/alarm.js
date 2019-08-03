@@ -1,5 +1,5 @@
-var sound = new Audio();alert();
-		sound.src = "https://gaana.com/playlist/rosidathokchom-gbabd-audiohindisong";
+var sound = new Audio();
+		sound.src = "";
 
 
 		setInterval(dateshow);
