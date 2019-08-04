@@ -55,10 +55,9 @@ var sound = new Audio();
 			 if (hour.value == new Date().getHours()  && minute.value == new Date().getMinutes() && second.value == new Date().getSeconds()) 
 				{ 
 					sound.addEventListener('ended', function() {
-    this.currentTime = 0;
-    this.play();
-}, false);
-sound.play();
+    						this.play();
+					}, false);
+					sound.play();
 				}
 		}
 
