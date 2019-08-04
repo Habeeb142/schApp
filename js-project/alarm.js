@@ -1,5 +1,5 @@
 var sound = new Audio();
-		sound.src = "media/one.aac";
+		sound.src = "media/tone.mp3";
 
 
 		setInterval(dateshow);
