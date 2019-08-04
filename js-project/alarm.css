@@ -147,31 +147,24 @@ button:hover
 #demo1:hover,#demo2:hover
 {
     display: none;
-}
-#calc
+}#calc
 {
     visibility: hidden;
-    position: absolute;
-    top:-30%;
 }
 #no
 {
     font-size: 30px;
     border-radius: 15px;
-    position:relative;
-    left:40%;
+    border: 1px solid #ff6c00
 }
 #demo1
 {
     font-size: 30px;
     color: red;
-    position: absolute;
 }
 #demo2
 {
     font-size: 30px;
     color: red;
-    position: absolute;
-    left:110%;
-    top: 76%
+ 
 }
