@@ -118,7 +118,10 @@ main
 {
     visibility: hidden;
 }
-
+button {
+    color: #ff6c00;
+    border: 2px solid #ff6c00
+}
 button:hover
 {
     background-color: rgb(171,63,0);
