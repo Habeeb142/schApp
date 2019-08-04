@@ -55,7 +55,7 @@ var sound = new Audio();
 			 if (hour.value == new Date().getHours()  && minute.value == new Date().getMinutes() && second.value == new Date().getSeconds()) 
 				{ 
 					sound.play();
-					sound.loop=true
+					sound.loop = true;
 				}
 		}
 
