@@ -12,7 +12,7 @@ $(document).ready(function(){
             //what to do when power off is pressed
             case 'off':
                 $('#strVal').css({"cursor" : "text", "border-left" : "5px solid #1ebf5e"});
-                $('#power').css({"border" : "1px solid #1ebf5e", "border-left" : "7px solid red", "border-right" : "7px solid red"});
+                $('#power').css({"border" : "1px solid #1ebf5e", "border-left" : "7px solid #1ebf5e", "border-right" : "7px solid #1ebf5e"});
                 $('#power').text('OFF');
                 power = 'on';
                 $("#result").val('0');
@@ -23,6 +23,7 @@ $(document).ready(function(){
             case 'on':
             //what to do when power off is pressed
                 $('#strVal').prop('disabled', 'true');
+                $('#power').css({"border" : "1px solid #1ebf5e", "border-left" : "7px solid red", "border-right" : "7px solid red"});
                 $('#power').text('ON');
                 $('#strVal').css({"cursor" : "not-allowed", "border-left" : "5px solid red"});
                 $("#result").val('Please Press the Power Button for result');
